@@ -1,0 +1,742 @@
+[
+  {
+    "time": "00:00",
+    "action": "OpenClaw 正在展示对话界面，显示模型正在处理请求或等待输入。",
+    "status": "core"
+  },
+  {
+    "time": "00:04",
+    "action": "对话内容持续更新，展示了 OpenClaw 与 AI 模型之间的交互过程。",
+    "status": "core"
+  },
+  {
+    "time": "00:09",
+    "action": "OpenClaw 开始尝试操纵浏览器，界面显示正在执行特定的网页操作或指令。",
+    "status": "core"
+  },
+  {
+    "time": "00:14",
+    "action": "浏览器窗口中弹出了具体的交互元素或错误提示，展示了 OpenClaw 在复杂环境下的操作反馈。",
+    "status": "core"
+  },
+  {
+    "time": "00:19",
+    "action": "用户在对话框中输入指令，OpenClaw 正在接收并处理请求",
+    "status": "core"
+  },
+  {
+    "time": "00:24",
+    "action": "OpenClaw 开始在浏览器窗口中执行操作，页面内容发生跳转或加载",
+    "status": "core"
+  },
+  {
+    "time": "00:29",
+    "action": "对话界面显示 OpenClaw 的回复过程，正在进行逻辑推理或输出结果",
+    "status": "core"
+  },
+  {
+    "time": "00:34",
+    "action": "浏览器页面保持在当前操作后的状态，对话框内容无明显变化",
+    "status": "useless"
+  },
+  {
+    "time": "00:39",
+    "action": "用户在浏览器中输入指令，OpenClaw 开始响应并展示对话界面。",
+    "status": "core"
+  },
+  {
+    "time": "00:44",
+    "action": "OpenClaw 在对话框中生成回复内容，正在处理用户的请求。",
+    "status": "core"
+  },
+  {
+    "time": "00:49",
+    "action": "OpenClaw 尝试执行操作，页面内容发生变化，展示了模型对指令的理解过程。",
+    "status": "core"
+  },
+  {
+    "time": "00:54",
+    "action": "OpenClaw 成功操纵浏览器界面，完成了预定的交互动作或页面跳转。",
+    "status": "core"
+  },
+  {
+    "time": "00:59",
+    "action": "OpenClaw 正在终端中运行，显示正在尝试执行指令，浏览器窗口处于待命状态。",
+    "status": "core"
+  },
+  {
+    "time": "01:04",
+    "action": "OpenClaw 在终端输出操作日志，浏览器页面内容保持不变。",
+    "status": "useless"
+  },
+  {
+    "time": "01:09",
+    "action": "OpenClaw 持续在终端进行指令尝试，浏览器界面无明显交互变化。",
+    "status": "useless"
+  },
+  {
+    "time": "01:14",
+    "action": "OpenClaw 的操作日志仍在滚动，展示了模型对指令的执行过程。",
+    "status": "core"
+  },
+  {
+    "time": "01:19",
+    "action": "OpenClaw 正在终端中运行，显示模型加载及初始化过程，对话框处于等待输入状态。",
+    "status": "core"
+  },
+  {
+    "time": "01:24",
+    "action": "OpenClaw 开始在浏览器中执行操作，页面显示正在加载或处理搜索/查询请求。",
+    "status": "core"
+  },
+  {
+    "time": "01:29",
+    "action": "浏览器页面内容发生变化，展示了具体的网页信息或搜索结果列表。",
+    "status": "core"
+  },
+  {
+    "time": "01:34",
+    "action": "OpenClaw 成功操纵浏览器进行进一步交互，页面显示特定的数据详情或操作反馈。",
+    "status": "core"
+  },
+  {
+    "time": "01:39",
+    "action": "OpenClaw 正在与用户进行对话，展示模型在终端环境下的交互界面。",
+    "status": "core"
+  },
+  {
+    "time": "01:44",
+    "action": "对话内容保持不变，OpenClaw 继续维持当前的交互状态。",
+    "status": "useless"
+  },
+  {
+    "time": "01:48",
+    "action": "OpenClaw 开始执行操作，界面显示其正在尝试通过指令控制浏览器或进行环境交互。",
+    "status": "core"
+  },
+  {
+    "time": "01:53",
+    "action": "OpenClaw 成功操纵浏览器并展示了网页内容，完成了预设的任务目标。",
+    "status": "core"
+  },
+  {
+    "time": "01:58",
+    "action": "用户在对话框中输入指令，OpenClaw 开始接收并处理任务请求。",
+    "status": "core"
+  },
+  {
+    "time": "02:03",
+    "action": "OpenClaw 正在生成回复，页面显示模型正在思考或输出文本内容。",
+    "status": "core"
+  },
+  {
+    "time": "02:08",
+    "action": "对话界面保持不变，展示之前的对话历史记录。",
+    "status": "useless"
+  },
+  {
+    "time": "02:13",
+    "action": "对话界面内容保持一致，无新的操作或回复产生。",
+    "status": "useless"
+  },
+  {
+    "time": "02:18",
+    "action": "OpenClaw 正在浏览器窗口中展示对话内容，页面显示一段包含代码逻辑的文本。",
+    "status": "core"
+  },
+  {
+    "time": "02:23",
+    "action": "画面保持不变，依然在展示 OpenClaw 的对话界面和代码文本。",
+    "status": "useless"
+  },
+  {
+    "time": "02:28",
+    "action": "OpenClaw 成功操纵浏览器，弹出了一个新的对话框或操作层，覆盖在原有页面之上。",
+    "status": "core"
+  },
+  {
+    "time": "02:33",
+    "action": "画面保持不变，继续显示 OpenClaw 操作后的交互界面及代码内容。",
+    "status": "useless"
+  },
+  {
+    "time": "02:38",
+    "action": "OpenClaw 正在浏览器界面中进行对话，展示模型与用户的交互过程。",
+    "status": "core"
+  },
+  {
+    "time": "02:43",
+    "action": "对话内容持续更新，OpenClaw 在处理指令并尝试在页面内执行操作。",
+    "status": "core"
+  },
+  {
+    "time": "02:48",
+    "action": "OpenClaw 继续进行浏览器内的交互与指令响应。",
+    "status": "core"
+  },
+  {
+    "time": "02:53",
+    "action": "对话界面保持不变，展示了操作过程中的状态。",
+    "status": "useless"
+  },
+  {
+    "time": "02:58",
+    "action": "OpenClaw 正在浏览器窗口中展示代码内容，用户界面保持静态。",
+    "status": "useless"
+  },
+  {
+    "time": "03:03",
+    "action": "OpenClaw 在对话框中生成回复，页面出现新的文本输出。",
+    "status": "core"
+  },
+  {
+    "time": "03:08",
+    "action": "浏览器界面显示代码运行结果或文档内容，画面内容保持一致。",
+    "status": "useless"
+  },
+  {
+    "time": "03:13",
+    "action": "OpenClaw 成功操纵浏览器并执行操作，对话框中出现新的交互指令或状态反馈。",
+    "status": "core"
+  },
+  {
+    "time": "03:18",
+    "action": "OpenClaw 正在浏览器界面中展示对话记录，用户输入与模型回复内容保持静态显示。",
+    "status": "useless"
+  },
+  {
+    "time": "03:23",
+    "action": "OpenClaw 在对话过程中出现错误回复，随后开始尝试通过指令操纵浏览器元素。",
+    "status": "core"
+  },
+  {
+    "time": "03:28",
+    "action": "OpenClaw 成功执行操作，页面内容随之发生跳转或更新，展示了对浏览器的控制能力。",
+    "status": "core"
+  },
+  {
+    "time": "03:32",
+    "action": "浏览器页面停留在操作后的结果界面，对话框显示最终的交互状态。",
+    "status": "useless"
+  },
+  {
+    "time": "03:37",
+    "action": "OpenClaw 正在终端窗口中进行对话，展示模型与环境的交互过程。",
+    "status": "core"
+  },
+  {
+    "time": "03:42",
+    "action": "对话内容持续更新，显示 OpenClaw 在处理指令并尝试通过浏览器进行操作。",
+    "status": "core"
+  },
+  {
+    "time": "03:47",
+    "action": "OpenClaw 正在输出回复，界面显示其对当前任务的逻辑推理过程。",
+    "status": "core"
+  },
+  {
+    "time": "03:52",
+    "action": "对话状态保持不变，终端窗口内的文本内容维持原有交互逻辑。",
+    "status": "useless"
+  },
+  {
+    "time": "03:57",
+    "action": "OpenClaw 正在与 AI 模型进行对话，展示初始的交互界面。",
+    "status": "core"
+  },
+  {
+    "time": "04:02",
+    "action": "对话内容持续更新，显示 OpenClaw 在处理指令过程中的回复状态。",
+    "status": "core"
+  },
+  {
+    "time": "04:07",
+    "action": "OpenClaw 尝试执行浏览器操作，对话框中出现模型生成的指令或错误反馈。",
+    "status": "core"
+  },
+  {
+    "time": "04:12",
+    "action": "OpenClaw 成功操纵浏览器进行页面跳转或元素交互，完成任务流程。",
+    "status": "core"
+  },
+  {
+    "time": "04:17",
+    "action": "OpenClaw 正在浏览器中展示对话界面，显示了之前的交互记录。",
+    "status": "core"
+  },
+  {
+    "time": "04:22",
+    "action": "画面保持不变，继续展示 OpenClaw 的对话内容。",
+    "status": "useless"
+  },
+  {
+    "time": "04:27",
+    "action": "画面保持不变，OpenClaw 的对话界面与前两张图一致。",
+    "status": "useless"
+  },
+  {
+    "time": "04:32",
+    "action": "画面保持不变，继续展示 OpenClaw 的对话及浏览器操作状态。",
+    "status": "useless"
+  },
+  {
+    "time": "04:37",
+    "action": "OpenClaw 正在终端中运行，显示正在处理任务的日志信息，界面保持初始状态。",
+    "status": "core"
+  },
+  {
+    "time": "04:42",
+    "action": "OpenClaw 的对话窗口出现，展示了模型与环境之间的交互过程及初步的指令输出。",
+    "status": "core"
+  },
+  {
+    "time": "04:47",
+    "action": "对话内容持续更新，显示 OpenClaw 正在尝试解析任务并进行下一步操作。",
+    "status": "core"
+  },
+  {
+    "time": "04:52",
+    "action": "OpenClaw 在对话框中输出了错误回复或尝试性的指令，随后开始通过浏览器进行页面交互操纵。",
+    "status": "core"
+  },
+  {
+    "time": "04:57",
+    "action": "OpenClaw 正在浏览器窗口中进行对话，展示模型能力。",
+    "status": "core"
+  },
+  {
+    "time": "05:02",
+    "action": "OpenClaw 在对话过程中出现错误回复或正在处理指令。",
+    "status": "core"
+  },
+  {
+    "time": "05:07",
+    "action": "OpenClaw 成功操纵浏览器，页面内容发生变化以响应指令。",
+    "status": "core"
+  },
+  {
+    "time": "05:12",
+    "action": "OpenClaw 继续在浏览器中执行后续操作或完成任务。",
+    "status": "core"
+  },
+  {
+    "time": "05:16",
+    "action": "OpenClaw 正在与 AI 模型进行对话，展示初始的交互界面。",
+    "status": "core"
+  },
+  {
+    "time": "05:21",
+    "action": "对话内容保持不变，页面处于等待或处理状态。",
+    "status": "useless"
+  },
+  {
+    "time": "05:26",
+    "action": "对话过程持续进行，展示模型对指令的响应逻辑。",
+    "status": "core"
+  },
+  {
+    "time": "05:31",
+    "action": "OpenClaw 成功操纵浏览器，弹出了 Google 搜索窗口并显示了搜索界面。",
+    "status": "core"
+  },
+  {
+    "time": "05:36",
+    "action": "OpenClaw 正在浏览器窗口中进行对话，展示了模型与用户的交互过程。",
+    "status": "core"
+  },
+  {
+    "time": "05:41",
+    "action": "对话内容保持不变，页面状态无变化。",
+    "status": "useless"
+  },
+  {
+    "time": "05:46",
+    "action": "OpenClaw 正在处理指令并尝试在浏览器中执行操作。",
+    "status": "core"
+  },
+  {
+    "time": "05:51",
+    "action": "OpenClaw 成功操纵浏览器，页面内容发生跳转或更新以响应指令。",
+    "status": "core"
+  },
+  {
+    "time": "00:56",
+    "action": "OpenClaw 正在与 AI 模型进行对话，展示初始的交互界面。",
+    "status": "core"
+  },
+  {
+    "time": "06:01",
+    "action": "OpenClaw 开始在浏览器中执行操作，页面内容发生变化，进入任务处理阶段。",
+    "status": "core"
+  },
+  {
+    "time": "06:06",
+    "action": "对话过程中出现错误回复或逻辑调整，OpenClaw 正在尝试修正并继续操作浏览器。",
+    "status": "core"
+  },
+  {
+    "time": "06:11",
+    "action": "OpenClaw 成功操纵浏览器完成目标任务，展示最终的执行结果。",
+    "status": "core"
+  },
+  {
+    "time": "06:16",
+    "action": "OpenClaw 正在与 AI 模型进行对话，展示初始的交互界面。",
+    "status": "core"
+  },
+  {
+    "time": "06:21",
+    "action": "对话过程持续，显示 OpenClaw 在处理指令及模型生成的回复内容。",
+    "status": "core"
+  },
+  {
+    "time": "06:26",
+    "action": "OpenClaw 成功操纵浏览器进行操作，页面内容随指令发生变化。",
+    "status": "core"
+  },
+  {
+    "time": "06:31",
+    "action": "对话界面及浏览器操作状态保持不变。",
+    "status": "useless"
+  },
+  {
+    "time": "06:36",
+    "action": "OpenClaw 正在浏览器中进行对话，展示了模型与用户的交互过程。",
+    "status": "core"
+  },
+  {
+    "time": "06:41",
+    "action": "OpenClaw 在对话过程中出现了错误的回复内容。",
+    "status": "core"
+  },
+  {
+    "time": "06:46",
+    "action": "OpenClaw 成功操纵浏览器，在页面中执行了特定的搜索或点击操作。",
+    "status": "core"
+  },
+  {
+    "time": "06:51",
+    "action": "画面内容保持不变，展示了操作完成后的浏览器状态。",
+    "status": "useless"
+  },
+  {
+    "time": "00:56",
+    "action": "浏览器显示百度首页，页面内容保持静止状态",
+    "status": "useless"
+  },
+  {
+    "time": "07:01",
+    "action": "OpenClaw 开始在对话框中输入指令并尝试与 AI 模型进行交互",
+    "status": "core"
+  },
+  {
+    "time": "07:05",
+    "action": "对话过程中出现错误回复，AI 模型未能正确理解指令",
+    "status": "core"
+  },
+  {
+    "time": "07:10",
+    "action": "OpenClaw 成功操纵浏览器进行页面跳转或元素交互",
+    "status": "core"
+  },
+  {
+    "time": "07:15",
+    "action": "OpenClaw 正在浏览器界面中展示对话内容，用户发起指令。",
+    "status": "core"
+  },
+  {
+    "time": "07:20",
+    "action": "页面内容保持不变，对话框状态一致。",
+    "status": "useless"
+  },
+  {
+    "time": "07:25",
+    "action": "OpenClaw 正在处理指令，浏览器页面显示对话过程。",
+    "status": "core"
+  },
+  {
+    "time": "07:30",
+    "action": "OpenClaw 成功操纵浏览器，页面跳转或内容发生变化，展示了搜索结果或新的网页内容。",
+    "status": "core"
+  },
+  {
+    "time": "07:35",
+    "action": "用户在对话框中输入指令，OpenClaw 正在接收并处理请求。",
+    "status": "core"
+  },
+  {
+    "time": "07:40",
+    "action": "OpenClaw 开始在浏览器中执行操作，页面内容发生跳转或加载。",
+    "status": "core"
+  },
+  {
+    "time": "07:45",
+    "action": "对话界面显示 OpenClaw 的回复过程，正在进行下一步的逻辑判断。",
+    "status": "core"
+  },
+  {
+    "time": "07:50",
+    "action": "浏览器页面内容保持不变，处于操作完成后的展示状态。",
+    "status": "useless"
+  },
+  {
+    "time": "07:55",
+    "action": "用户在浏览器中输入指令，OpenClaw 开始响应并展示对话过程。",
+    "status": "core"
+  },
+  {
+    "time": "08:00",
+    "action": "OpenClaw 在对话中给出了错误的回复内容，未能正确执行预期任务。",
+    "status": "core"
+  },
+  {
+    "time": "08:05",
+    "action": "画面显示浏览器页面内容及对话框状态，操作过程持续进行中。",
+    "status": "core"
+  },
+  {
+    "time": "08:10",
+    "action": "OpenClaw 成功操纵浏览器完成后续动作，对话界面显示任务执行结果。",
+    "status": "core"
+  },
+  {
+    "time": "08:15",
+    "action": "用户在对话框中输入指令，OpenClaw 正在接收并处理请求。",
+    "status": "core"
+  },
+  {
+    "time": "08:20",
+    "action": "OpenClaw 开始在浏览器中执行操作，页面内容发生跳转或加载。",
+    "status": "core"
+  },
+  {
+    "time": "08:25",
+    "action": "对话界面显示 OpenClaw 的回复过程，正在进行逻辑推理或尝试操纵元素。",
+    "status": "core"
+  },
+  {
+    "time": "08:30",
+    "action": "浏览器页面状态保持不变，等待进一步指令。",
+    "status": "useless"
+  },
+  {
+    "time": "08:35",
+    "action": "OpenClaw 在浏览器中展示对话过程，显示模型正在处理请求并生成包含代码块的回复。",
+    "status": "core"
+  },
+  {
+    "time": "08:40",
+    "action": "对话内容保持不变，页面仍停留在之前的回复状态。",
+    "status": "useless"
+  },
+  {
+    "time": "08:45",
+    "action": "对话内容持续显示，模型生成的文本和代码块在屏幕上维持原样。",
+    "status": "useless"
+  },
+  {
+    "time": "08:49",
+    "action": "页面状态保持一致，未观察到新的浏览器操作或新的对话交互发生。",
+    "status": "useless"
+  },
+  {
+    "time": "08:54",
+    "action": "OpenClaw 正在与 AI 模型进行对话，展示初始的交互界面。",
+    "status": "core"
+  },
+  {
+    "time": "08:59",
+    "action": "对话内容持续更新，展示了 OpenClaw 的响应过程及可能的错误回复尝试。",
+    "status": "core"
+  },
+  {
+    "time": "09:04",
+    "action": "OpenClaw 开始执行浏览器操作指令，页面内容随之发生变化。",
+    "status": "core"
+  },
+  {
+    "time": "09:09",
+    "action": "OpenClaw 成功操纵浏览器完成任务，展示了最终的操作结果。",
+    "status": "core"
+  },
+  {
+    "time": "09:14",
+    "action": "OpenClaw 正在浏览器窗口中展示对话内容，包含模型生成的代码块和文本回复。",
+    "status": "core"
+  },
+  {
+    "time": "09:19",
+    "action": "对话过程持续进行，页面显示 OpenClaw 的交互逻辑及对指令的响应状态。",
+    "status": "core"
+  },
+  {
+    "time": "09:24",
+    "action": "OpenClaw 正在处理复杂的对话流，展示其在浏览器环境下的操作反馈。",
+    "status": "core"
+  },
+  {
+    "time": "09:29",
+    "action": "画面内容与前一时刻保持一致，继续显示 OpenClaw 的对话界面。",
+    "status": "useless"
+  },
+  {
+    "time": "09:34",
+    "action": "OpenClaw 正在浏览器窗口中展示对话内容，包含模型生成的代码片段和文本回复。",
+    "status": "core"
+  },
+  {
+    "time": "09:39",
+    "action": "对话界面保持不变，显示之前的交互记录。",
+    "status": "useless"
+  },
+  {
+    "time": "09:44",
+    "action": "对话界面内容与前序画面一致，未见新的操作或回复变化。",
+    "status": "useless"
+  },
+  {
+    "time": "09:49",
+    "action": "对话界面保持不变，仍处于之前的文本展示状态。",
+    "status": "useless"
+  },
+  {
+    "time": "09:54",
+    "action": "OpenClaw 正在浏览器界面中展示对话内容，用户输入指令后模型进行响应。",
+    "status": "core"
+  },
+  {
+    "time": "09:59",
+    "action": "对话过程持续进行，OpenClaw 在处理任务并尝试通过浏览器执行操作。",
+    "status": "core"
+  },
+  {
+    "time": "10:04",
+    "action": "画面显示对话框内容，模型正在输出回复或等待指令执行。",
+    "status": "core"
+  },
+  {
+    "time": "10:09",
+    "action": "OpenClaw 成功操纵浏览器进行页面交互或完成特定任务步骤。",
+    "status": "core"
+  },
+  {
+    "time": "10:14",
+    "action": "OpenClaw 正在浏览器中展示对话内容，用户输入指令后模型进行响应。",
+    "status": "core"
+  },
+  {
+    "time": "10:19",
+    "action": "对话过程持续进行，页面内容保持一致。",
+    "status": "useless"
+  },
+  {
+    "time": "10:24",
+    "action": "OpenClaw 正在处理指令并尝试在浏览器中执行操作。",
+    "status": "core"
+  },
+  {
+    "time": "10:29",
+    "action": "页面内容保持不变，对话流继续推进。",
+    "status": "useless"
+  },
+  {
+    "time": "10:33",
+    "action": "OpenClaw 正在浏览器界面中展示对话内容，用户正在与 AI 模型进行交互。",
+    "status": "core"
+  },
+  {
+    "time": "10:38",
+    "action": "对话过程持续进行，页面内容保持一致。",
+    "status": "useless"
+  },
+  {
+    "time": "10:43",
+    "action": "OpenClaw 正在处理对话请求，展示了模型生成的回复内容。",
+    "status": "core"
+  },
+  {
+    "time": "10:48",
+    "action": "浏览器页面状态保持不变，对话记录维持原样。",
+    "status": "useless"
+  },
+  {
+    "time": "10:53",
+    "action": "OpenClaw 正在浏览器界面中展示对话内容，用户输入指令后模型进行响应。",
+    "status": "core"
+  },
+  {
+    "time": "10:58",
+    "action": "对话过程持续进行，显示 OpenClaw 对当前页面内容的理解与处理状态。",
+    "status": "core"
+  },
+  {
+    "time": "11:03",
+    "action": "OpenClaw 在对话框中输出回复内容，展示其逻辑推理或操作意图。",
+    "status": "core"
+  },
+  {
+    "time": "11:08",
+    "action": "OpenClaw 成功执行浏览器操纵动作，页面内容随指令发生变化。",
+    "status": "core"
+  },
+  {
+    "time": "11:13",
+    "action": "OpenClaw 正在浏览器中进行对话，展示模型交互过程",
+    "status": "core"
+  },
+  {
+    "time": "11:18",
+    "action": "对话内容保持不变，页面状态一致",
+    "status": "useless"
+  },
+  {
+    "time": "11:23",
+    "action": "OpenClaw 正在进行后续对话操作",
+    "status": "core"
+  },
+  {
+    "time": "11:28",
+    "action": "页面内容保持不变，无新操作发生",
+    "status": "useless"
+  },
+  {
+    "time": "11:33",
+    "action": "OpenClaw 正在浏览器中展示对话内容，用户输入指令并等待模型响应。",
+    "status": "core"
+  },
+  {
+    "time": "11:38",
+    "action": "对话过程持续进行，模型在处理任务，页面内容保持一致。",
+    "status": "useless"
+  },
+  {
+    "time": "11:43",
+    "action": "OpenClaw 正在执行操作，对话框中显示了模型的回复逻辑。",
+    "status": "core"
+  },
+  {
+    "time": "11:48",
+    "action": "模型尝试操纵浏览器或进行下一步交互，页面状态保持不变。",
+    "status": "useless"
+  },
+  {
+    "time": "11:53",
+    "action": "OpenClaw 正在浏览器中展示对话界面，用户输入指令后模型开始响应。",
+    "status": "core"
+  },
+  {
+    "time": "11:58",
+    "action": "对话过程持续进行，OpenClaw 在处理任务时输出了一段错误的回复内容。",
+    "status": "core"
+  },
+  {
+    "time": "12:03",
+    "action": "画面显示浏览器页面内容保持不变，对话框状态一致。",
+    "status": "useless"
+  },
+  {
+    "time": "12:08",
+    "action": "OpenClaw 成功执行指令并操纵浏览器进行了页面跳转或元素交互。",
+    "status": "core"
+  }
+]
