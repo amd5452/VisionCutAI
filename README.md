@@ -1,13 +1,33 @@
 # VisionCutAI
 An AI-powered auto-editor purely driven by visual analysis. No audio track required.（一款纯粹由视觉分析驱动的 AI 自动剪辑工具。无需任何音频轨。）
 无需借助音频理解视频内容，直接通过画面理解视频，并剪辑处理
+
+微信群，见非书文档 https://my.feishu.cn/wiki/B5eYw1bUOiWkzQkvY3ucHjUSnja?from=from_copylink
+
 gemma4 26b4b小模型 即可快速理解
 通过将视频帧画面 ，4帧画面组合成一个2*2宫格图片，让AI理解视频画面的速度提升4倍，且方便AI理解4帧关联度，提升画面解析的准确性
 
 
 第一步 videototext.py 负责将视频解读成文本+时间戳JSON
+运行之前，修改代码中的
+# 替换为你实际的视频路径
+my_video = r"20260405_133300.mp4"  改成你要剪辑的视频素材路径
+
+# 这里动态传入你想让 AI 关注的核心点（比如录教程和展示功能的区别）
+my_focus = """
+这是我录制的一段 ai模型和openclaw能力的展示。
+重点关注：openclaw的对话过程，对话中的错误回复，openclaw成功操纵浏览器
+忽略：右下角的系统时间跳动、系统桌面背景和图标。
+"""      
+my_focus改成你要，提醒AI关注视频中比较重要的东西，包括想展示的和不想展示的，这样AI在解读视频的时候，就会重点标注当前片段 是否有需要的和不需要的
+忽略则是 一些无关紧要的元素 ，比如 录制教程时的桌面，还有不断变动的系统时间
+
 第二步 通过大模型，将视频文本JSON和字幕文件，输出剪辑策略
 第三步 outvideo.py 根据策略完整最终的视频剪辑
+运行前修改：
+MY_AUDIO = r"E:\系统下载\audio-1775719992471.mp3"  这是视频讲解文案 口播音频 ，写好路径，第二步中的字幕文件，就是这个音频的配套字幕，剪辑好后会自动合成到视频中
+MY_VIDEO = r"20260405_133300.mp4"  这是视频素材的路径 
+MY_JSON =     这是第二步输出的剪辑策略的JSON 替换到这里
 
 ** 输出剪辑策略，需要用AI来完成，提示词如下： **
 
@@ -85,4 +105,83 @@ gemma4 26b4b小模型 即可快速理解
 
 >   ]
 
+> }
+
+Here is the English translation of your GitHub documentation and the AI prompt. I have kept the technical tone clear and precise so developers can easily understand your workflow.
+
+***
+
+Understand and edit videos directly through visual frames, without relying on audio cues. 
+A lightweight model like Gemma-4 26B 4-bit can quickly process and understand the content. 
+By stitching video frames into a 2x2 grid (combining 4 frames into a single image), the AI's video processing speed is increased by 4x. This also helps the AI understand the context between 4 consecutive frames, significantly improving the accuracy of visual parsing.
+
+### Step 1: `videototext.py` parses the video into a text + timestamp JSON log
+
+Before running, modify the code:
+
+```python
+# Replace with your actual video path
+my_video = r"20260405_133300.mp4" # Change this to the path of your raw video footage
+
+# Dynamically pass in the core points you want the AI to focus on 
+my_focus = """
+This is a demonstration of the AI model and OpenClaw capabilities.
+Focus on: the conversation process in OpenClaw, error responses in the dialogue, and OpenClaw successfully manipulating the browser.
+Ignore: the jumping system time in the bottom right corner, desktop background, and icons.
+"""      
+```
+Change `my_focus` to fit your specific needs. Remind the AI of what is important in the video, including what you want to showcase and what you don't. This way, when the AI interprets the video, it will prioritize tagging whether the current segment is needed or unneeded. "Ignore" refers to irrelevant elements, such as the desktop background during a tutorial recording or the constantly changing system clock.
+
+### Step 2: Use an LLM to output an editing strategy based on the video JSON and subtitle file
+
+*(See the prompt section below for the AI instructions)*
+
+### Step 3: `outvideo.py` completes the final video edit based on the strategy
+
+Before running, modify the following variables:
+* `MY_AUDIO = r"E:\Downloads\audio-1775719992471.mp3"` — This is your voiceover audio file. The subtitle file used in Step 2 is the companion to this audio. Once edited, this audio will be automatically merged into the final video.
+* `MY_VIDEO = r"20260405_133300.mp4"` — This is the path to your raw video footage.
+* `MY_JSON = ` — Paste the editing strategy JSON output from Step 2 here.
+
+---
+
+**To generate the editing strategy, you need to use an AI. Use the prompt below for the AI agent:**
+
+> **[Role Definition]**
+> You are a "Post-Production Director" and an automated data processing engine with top-tier non-linear editing logic. Your core task is to dispatch the [Video Source Log] based on the user-provided [Subtitle Timeline] and strictly calculate a precise editing decision JSON script.
+> 
+> **[Workflow Mechanism]**
+> In this conversation, the user will provide (or upload) two core assets:
+> 1. **Asset A: [Subtitle Timeline]** (Master Timeline, containing timestamped subtitle text)
+> 2. **Asset B: [Video Interpretation JSON]** (Source Material, containing the `time`, `action`, and `status` attributes of the extracted frames)
+> 
+> Once you receive these two pieces of data, immediately activate the editing decision engine and follow the philosophy and rules below to process them:
+> 
+> **[Core Editing Philosophy]**
+> 1. **"Audio is the soul, video is the body"**: The final video's timeline is entirely determined by the [Subtitle Timeline]. The appearance and switching of video frames must closely follow the "ideas" and "semantics" expressed by the subtitles.
+> 2. **Semantic Mapping Reorganization (Non-linear Editing)**: The footage does not need to be played in the chronological order of the original video. If the subtitle mentions a later action at the beginning (e.g., as a teaser or intro), you must extract the corresponding video clip from later in the footage and place it at the beginning. If the action is explained in detail again in the middle, that same video clip can be extracted and reused.
+> 3. **Minimalist Time Condensing**: When the action time in the raw video is much longer than the subtitle's spoken time, or if it contains long pauses or invalid operations, you must actively cut them out (completely ignore clips with the status 'useless'), and only extract the most core action frames to match the subtitle length.
+> 
+> **[🎬 Execution Instructions & Mandatory Rules]**
+> Read the user-provided [Asset A] sentence by sentence, find the most semantically matching video frames in [Asset B], and align the timing.
+> 1. **Precise Matching**: The visuals must display content relevant to whatever the subtitle is saying. If a perfect matching action cannot be found, select the `core` frame with the most similar status as B-roll/padding.
+> 2. **Allow Frame Repetition**: The same raw video time segment can be referenced multiple times in the final edit based on the subtitle's logic.
+> 3. **Trimming and Speed Control**: If the matched raw video action is long (e.g., 15 seconds), but the corresponding subtitle is only 3 seconds, you only need to extract the most essential 3-second interval from the raw video. Strictly prohibited to use `useless` status frames to pad the duration.
+> 
+> **[🗂️ Output Format (Strict Data Contract)]**
+> You must and can only output a pure JSON object containing a `clips_to_keep` array.
+> This array represents all the segments that need to be sequentially extracted and kept from the raw video when synthesizing the final new video. Time segments not included in this JSON array will be considered scrap and discarded.
+> 
+> **Absolutely NO Markdown code block symbols (like \`\`\`json), and NO prefaces, postscripts, or explanatory text. You must start directly with `{` and end directly with `}`.**
+> 
+> **JSON Structure Template Reference:**
+> {
+>   "clips_to_keep": [
+>     {
+>       "source_start_sec": Float (The starting seconds extracted from the raw video),
+>       "source_end_sec": Float (The ending seconds extracted from the raw video),
+>       "matched_subtitle": "The corresponding original subtitle text",
+>       "reason": "The logical reason why you chose this footage"
+>     }
+>   ]
 > }
