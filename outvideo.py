@@ -65,14 +65,39 @@ def create_final_video(video_path, audio_path, json_string, output_path="final_c
     print("\n🔗 正在拼接所有片段...")
     final_video_no_audio = concatenate_videoclips(extracted_clips)
 
-    # 5. 铺上主音频 (灵魂附体)
-    print("🎵 正在注入主音频轨道...")
-    # 如果合成的视频比音频短，截断音频；如果视频比音频长，保持原样（音频结束后无声）
-    if total_new_duration < voiceover_audio.duration:
-        voiceover_audio = voiceover_audio.subclipped(0, total_new_duration)
+    
+    # 5. 处理音视频对齐与合成
+    print("🎵 正在处理音视频对齐...")
+    
+    video_dur = final_video_no_audio.duration
+    audio_dur = voiceover_audio.duration
+
+    if video_dur < audio_dur:
+        print(f"⚠️ 提示：视频总时长({video_dur:.1f}s) 小于 音频总时长({audio_dur:.1f}s)。")
+        print("❄️ 正在冻结最后一帧画面以补齐结尾的音频...")
         
-    # 2.0 版本中 set_audio 推荐使用 with_audio
-    final_video = final_video_no_audio.with_audio(voiceover_audio)
+        # 1. 引入制作静态画面的必要模块 (放在文件最顶部的 import 也可以)
+        from moviepy import ImageClip
+        
+        # 2. 计算需要补齐的时间差
+        gap = audio_dur - video_dur
+        
+        # 3. 获取视频的最后一帧画面（稍微提前0.1秒截取，防止取到黑屏空帧）
+        last_frame = final_video_no_audio.get_frame(video_dur - 0.1)
+        
+        # 4. 用最后一帧生成一个静态视频片段，时长为 gap
+        freeze_clip = ImageClip(last_frame).with_duration(gap)
+        
+        # 5. 将原来的视频和静态结尾拼接在一起
+        final_video_no_audio = concatenate_videoclips([final_video_no_audio, freeze_clip])
+        
+        # 6. 给延长后的完整视频配上未被截断的音频
+        final_video = final_video_no_audio.with_audio(voiceover_audio)
+        
+    else:
+        # 如果视频比音频长，那么只要按音频的长度把多余的视频截断即可
+        print("✂️ 视频较长，将按照音频长度进行适配...")
+        final_video = final_video_no_audio.subclipped(0, audio_dur).with_audio(voiceover_audio)
 
     # 6. 渲染并导出成片
     print(f"\n🚀 正在渲染最终视频至: {output_path}")
